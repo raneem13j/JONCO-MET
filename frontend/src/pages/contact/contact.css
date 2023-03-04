@@ -1,0 +1,252 @@
+.ccontact_container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/assets/window.jpg");
+  background-position-x: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cheader_container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cheadline1 {
+  color: #ef4444;
+  padding-right: 10px;
+}
+.cheadline2 {
+  color: white;
+}
+.cinside {
+  font-size: 50px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+}
+.ccontact_section {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+
+  padding-bottom: 2.5rem;
+  padding-top: 4rem;
+}
+
+.cccontact_form-container input {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 100%;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  padding-left: 15px;
+}
+.cfirst_name {
+  padding-top: 20px;
+}
+
+.cccontact_form-container input::-webkit-input-placeholder {
+  color: #ac9784;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cccontact_form-container input:-ms-input-placeholder {
+  color: #ac9784;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cccontact_form-container input::-ms-input-placeholder {
+  color: #ac9784;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cccontact_form-container input::placeholder {
+  color: #ac9784;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cccontact_form-container input.message_input {
+  height: 100px;
+}
+.cccontact_form-container textarea {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 100%;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  padding-left: 15px;
+}
+.cccontact_form-container textarea::placeholder {
+  color: #ac9784;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.cccontact_form-container label {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cccontact_form-container  .input-email {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 98%;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  padding-left: 15px;
+}
+
+.cccontact_form-container {
+
+  
+  box-shadow: none;
+  width:35%;
+}
+
+.cccontact_form-container button {
+  border: none;
+  border-radius: 30px;
+  background-color: #ef4444;
+
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.csub_button {
+  text-align: center;
+}
+.btn-contact:hover {
+  background-color: #ff0000;
+}
+
+.btn-contact:active {
+  background-color: #b70909;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.contact-p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 0px;
+    
+}
+.contact-image {
+  width: 2.2rem;
+}
+
+.mapouter {
+  padding: 0;
+  margin-top: 30px;
+  border: #ef4444 solid;
+  border-radius: 15px;
+  position: relative;
+  text-align: right;
+  width: 592px;
+  height: 376px;
+  cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+}
+.gmap_canvas {
+  border-radius: 15px;
+  overflow: hidden;
+  background: none !important;
+  width: 585px;
+  height: 370px;
+}
+.gmap_iframe {
+  
+  height: 400px !important;
+}
+.contact-hr {
+  background-color: #ef4444;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 4px;
+}
+.cdiv_info {
+  display: flex;
+  align-items: center;
+}
+.cinfo {
+  display: flex;
+  padding-left: 40px;
+}
+.cinfo2{
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ccontact_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+  }
+  .cccontact_form-container {
+    padding: 15px 15px 15px 0;
+    width: 75%;
+  }
+  .mapouter {
+    padding-left: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: #ef4444 solid;
+    border-radius: 15px;
+    position: relative;
+    text-align: right;
+    width: 90%;
+    height: 300px;
+    cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+  }
+  .gmap_canvas {
+    border-radius: 15px;
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 295px;
+  }
+  .gmap_iframe {
+    height: 400px !important;
+  }
+  .cinfo {
+    display: flex;
+    padding-left: 20px;
+  }
+}

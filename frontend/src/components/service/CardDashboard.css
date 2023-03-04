@@ -1,0 +1,259 @@
+.services-cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(40vh, auto);
+  width: 85%;
+  grid-gap: 13px;
+  margin: 0 auto;
+  place-items: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.section {
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+  border-radius: 0.5rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  opacity: 0.75;
+  top: -387px;
+  transition: 0.5s;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center !important;
+  color: #ef4444;
+}
+
+.card-description {
+  /* font-size: 18px;
+    color: #333;
+    display: none;*/
+  font-size: 20px !important ;
+  /* line-height: 28px !important; */
+  text-align: center;
+  display: block;
+
+  /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  width: 93%;
+  background-color: rgba(163, 141, 141, 0.664);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.section:hover .card-description {
+  display: block;
+}
+
+.section:hover .card-title {
+  display: none;
+}
+
+/* newwwwwwwwwwwwwwwwww */
+
+.section .card-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ff0033;
+}
+
+@media (max-width: 575px) {
+  .section .card-content {
+    padding-top: 3rem;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section .card-content {
+    text-decoration: none;
+  }
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff0033;
+  position: absolute;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-content {
+    text-decoration: none;
+  }
+}
+
+/* newwwwwwwwwwwwwwwwww */
+
+.section:hover .card-description {
+  display: block;
+}
+
+.section:hover .card-description {
+  font-size: 11px;
+  display: block;
+}
+.section:hover .cover {
+  filter: blur(8px);
+}
+
+@media (max-width: 1024px) {
+  .services-cards {
+    display: flex;
+    grid-template-columns: 50%;
+    grid-auto-rows: minmax(40vh, auto);
+    flex-wrap: wrap;
+    width: 100%;
+    grid-gap: 13px;
+    margin: 0 auto;
+    place-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+
+  .section:hover .card-description {
+    font-size: 11px !important ;
+    display: block;
+  }
+  .gclose{
+      background-color:transparent ;
+      position:relative;
+      bottom: 340px;
+      left: 400px;
+      }
+}
+
+.section:hover .card-title {
+  display: none;
+  font-size: small;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.section:hover .card {
+  top: 0;
+}
+ .gclose{
+  background-color:transparent ;
+  position:sticky;
+  bottom: 350px;
+  left: 620px;
+  } 
+.section::before {
+  display: flex;
+
+  content: attr(data-content);
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  width: 100%;
+  height: fit-content;
+  color: #ef4444;
+  background-color: #ffffffc7;
+  position: absolute;
+  z-index: 0;
+  top: 126px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .section::before {
+    display: flex;
+  
+    content: attr(data-content);
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    height: fit-content;
+    color: #ef4444;
+    background-color: #ffffffc7;
+    position: absolute;
+    z-index: 0;
+    top: 65px;
+    transition: 0.5s;
+  }
+  
+}
+
+.card-content::after {
+  content: attr(data-description);
+  background-color: red;
+}
+
+.section:hover::before {
+  opacity: 0.2;
+}

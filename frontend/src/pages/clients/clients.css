@@ -1,0 +1,82 @@
+
+.cclients_container {
+  
+  width: 100%;
+  background-image: url("../../assets/assets/test6.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.chead_container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cheadline1{
+  color: white;
+  padding-right: 10px;
+}
+.cheadline2 {
+  color: #ef4444;
+}
+.cinside {
+  font-size: 50px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+}
+/* the component section here */
+.csection {
+  background-color: white;
+  height: 100%;
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  margin-bottom: 30px;
+  
+}
+
+.cclients_card {
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.ccategory_h {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  padding-left: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.li-c {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  list-style-type: none;
+  padding-top: 10px;
+  font-size: 20px;
+  
+}
+
+.span-c {
+  color: #ef4444;
+}
+@media screen and (max-width: 1024px) {
+  .csection_clients {
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+  }
+  .ccategory_h {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .li-c  {
+    font-size: 18px;
+  }
+}
